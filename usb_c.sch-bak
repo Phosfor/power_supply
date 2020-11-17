@@ -1,0 +1,479 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 7
+Title "USB-C Connector and Controller"
+Date "2020-11-30"
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J2
+U 1 1 5F9D8D5E
+P 8500 4500
+AR Path="/5F9D8962/5F9D8D5E" Ref="J2"  Part="1" 
+AR Path="/5FA19082/5F9D8D5E" Ref="J1"  Part="1" 
+F 0 "J2" H 8607 5367 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 8607 5276 50  0000 C CNN
+F 2 "" H 8650 4500 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 8650 4500 50  0001 C CNN
+	1    8500 4500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5F9E1C0F
+P 7000 4400
+AR Path="/5F9D8962/5F9E1C0F" Ref="C5"  Part="1" 
+AR Path="/5FA19082/5F9E1C0F" Ref="C1"  Part="1" 
+F 0 "C5" H 7115 4446 50  0000 L CNN
+F 1 "220pF" H 7115 4355 50  0000 L CNN
+F 2 "" H 7038 4250 50  0001 C CNN
+F 3 "~" H 7000 4400 50  0001 C CNN
+	1    7000 4400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5F9E3421
+P 6550 4400
+AR Path="/5F9D8962/5F9E3421" Ref="C6"  Part="1" 
+AR Path="/5FA19082/5F9E3421" Ref="C2"  Part="1" 
+F 0 "C6" H 6665 4446 50  0000 L CNN
+F 1 "220pF" H 6665 4355 50  0000 L CNN
+F 2 "" H 6588 4250 50  0001 C CNN
+F 3 "~" H 6550 4400 50  0001 C CNN
+	1    6550 4400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 4250 7000 4100
+Connection ~ 7000 4100
+Wire Wire Line
+	6550 4250 6550 4200
+Wire Wire Line
+	6550 4200 5150 4200
+$Comp
+L power:GND #PWR015
+U 1 1 5F9E44E3
+P 7000 4550
+AR Path="/5F9D8962/5F9E44E3" Ref="#PWR015"  Part="1" 
+AR Path="/5FA19082/5F9E44E3" Ref="#PWR03"  Part="1" 
+F 0 "#PWR015" H 7000 4300 50  0001 C CNN
+F 1 "GND" H 7005 4377 50  0000 C CNN
+F 2 "" H 7000 4550 50  0001 C CNN
+F 3 "" H 7000 4550 50  0001 C CNN
+	1    7000 4550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5F9E4DDE
+P 6550 4550
+AR Path="/5F9D8962/5F9E4DDE" Ref="#PWR016"  Part="1" 
+AR Path="/5FA19082/5F9E4DDE" Ref="#PWR04"  Part="1" 
+F 0 "#PWR016" H 6550 4300 50  0001 C CNN
+F 1 "GND" H 6555 4377 50  0000 C CNN
+F 2 "" H 6550 4550 50  0001 C CNN
+F 3 "" H 6550 4550 50  0001 C CNN
+	1    6550 4550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 5F9E5E1B
+P 8500 5400
+AR Path="/5F9D8962/5F9E5E1B" Ref="#PWR014"  Part="1" 
+AR Path="/5FA19082/5F9E5E1B" Ref="#PWR02"  Part="1" 
+F 0 "#PWR014" H 8500 5150 50  0001 C CNN
+F 1 "GND" H 8505 5227 50  0000 C CNN
+F 2 "" H 8500 5400 50  0001 C CNN
+F 3 "" H 8500 5400 50  0001 C CNN
+	1    8500 5400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR019
+U 1 1 5F9E650B
+P 4450 4600
+AR Path="/5F9D8962/5F9E650B" Ref="#PWR019"  Part="1" 
+AR Path="/5FA19082/5F9E650B" Ref="#PWR07"  Part="1" 
+F 0 "#PWR019" H 4450 4350 50  0001 C CNN
+F 1 "GND" H 4455 4427 50  0000 C CNN
+F 2 "" H 4450 4600 50  0001 C CNN
+F 3 "" H 4450 4600 50  0001 C CNN
+	1    4450 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR013
+U 1 1 5F9E6EC6
+P 8800 5400
+AR Path="/5F9D8962/5F9E6EC6" Ref="#PWR013"  Part="1" 
+AR Path="/5FA19082/5F9E6EC6" Ref="#PWR01"  Part="1" 
+F 0 "#PWR013" H 8800 5200 50  0001 C CNN
+F 1 "GNDPWR" H 8804 5246 50  0000 C CNN
+F 2 "" H 8800 5350 50  0001 C CNN
+F 3 "" H 8800 5350 50  0001 C CNN
+	1    8800 5400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 4100 7450 4100
+Wire Wire Line
+	7900 4200 7350 4200
+Connection ~ 6550 4200
+Wire Wire Line
+	7000 4100 5150 4100
+$Comp
+L power:GND #PWR021
+U 1 1 5FA04C43
+P 8150 3350
+AR Path="/5F9D8962/5FA04C43" Ref="#PWR021"  Part="1" 
+AR Path="/5FA19082/5FA04C43" Ref="#PWR09"  Part="1" 
+F 0 "#PWR021" H 8150 3100 50  0001 C CNN
+F 1 "GND" H 8155 3177 50  0000 C CNN
+F 2 "" H 8150 3350 50  0001 C CNN
+F 3 "" H 8150 3350 50  0001 C CNN
+	1    8150 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5FA05173
+P 8150 3200
+AR Path="/5F9D8962/5FA05173" Ref="C8"  Part="1" 
+AR Path="/5FA19082/5FA05173" Ref="C4"  Part="1" 
+F 0 "C8" H 8265 3246 50  0000 L CNN
+F 1 "1uF" H 8265 3155 50  0000 L CNN
+F 2 "" H 8188 3050 50  0001 C CNN
+F 3 "~" H 8150 3200 50  0001 C CNN
+	1    8150 3200
+	1    0    0    -1  
+$EndComp
+Text HLabel 3600 3700 0    50   3State ~ 0
+SDA
+Text HLabel 3600 3800 0    50   3State ~ 0
+SCL
+Text HLabel 3600 3900 0    50   3State ~ 0
+~INT
+Text HLabel 7600 4450 0    50   BiDi ~ 0
+D-
+Text HLabel 7600 4650 0    50   BiDi ~ 0
+D+
+Wire Wire Line
+	7900 4400 7900 4450
+Wire Wire Line
+	7900 4450 7600 4450
+Connection ~ 7900 4450
+Wire Wire Line
+	7900 4450 7900 4500
+Wire Wire Line
+	7600 4650 7900 4650
+Wire Wire Line
+	7900 4650 7900 4600
+Wire Wire Line
+	7900 4700 7900 4650
+Connection ~ 7900 4650
+Text HLabel 6850 3000 0    50   BiDi ~ 0
+VBUS
+Wire Wire Line
+	7000 3000 6850 3000
+Text Notes 2950 2400 0    50   ~ 0
+The VBUS MOSFET is used to enable the output to the USB-C port while its body diode allows powering the rest of the system through the USB port.
+$Comp
+L Interface_USB:FUSB307BMPX U?
+U 1 1 60225B33
+P 4450 4000
+F 0 "U?" H 4900 3350 50  0000 C CNN
+F 1 "FUSB307BMPX" H 4850 3450 50  0000 C CNN
+F 2 "Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.75x1.75mm" H 4450 3300 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/FUSB307B-D.PDF" H 4450 3400 50  0001 C CNN
+	1    4450 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3700 3750 3700
+Wire Wire Line
+	3600 3800 3750 3800
+Wire Wire Line
+	3600 3900 3750 3900
+$Comp
+L Device:C C?
+U 1 1 6026DB9D
+P 3100 3150
+F 0 "C?" H 3215 3196 50  0000 L CNN
+F 1 "10uF" H 3215 3105 50  0000 L CNN
+F 2 "" H 3138 3000 50  0001 C CNN
+F 3 "~" H 3100 3150 50  0001 C CNN
+	1    3100 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3000 4450 3000
+Wire Wire Line
+	4450 3000 4450 3400
+$Comp
+L power:GND #PWR?
+U 1 1 602710FE
+P 3100 3300
+AR Path="/5F9D8962/602710FE" Ref="#PWR?"  Part="1" 
+AR Path="/5FA19082/602710FE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3100 3050 50  0001 C CNN
+F 1 "GND" H 3105 3127 50  0000 C CNN
+F 2 "" H 3100 3300 50  0001 C CNN
+F 3 "" H 3100 3300 50  0001 C CNN
+	1    3100 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60271844
+P 3100 3000
+F 0 "#PWR?" H 3100 2850 50  0001 C CNN
+F 1 "+5V" H 3115 3173 50  0000 C CNN
+F 2 "" H 3100 3000 50  0001 C CNN
+F 3 "" H 3100 3000 50  0001 C CNN
+	1    3100 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 3100 3000
+$Comp
+L Device:C C?
+U 1 1 60271F51
+P 3650 3300
+F 0 "C?" H 3765 3346 50  0000 L CNN
+F 1 "1uF" H 3765 3255 50  0000 L CNN
+F 2 "" H 3688 3150 50  0001 C CNN
+F 3 "~" H 3650 3300 50  0001 C CNN
+	1    3650 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6027272F
+P 3650 3450
+AR Path="/5F9D8962/6027272F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA19082/6027272F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3650 3200 50  0001 C CNN
+F 1 "GND" H 3655 3277 50  0000 C CNN
+F 2 "" H 3650 3450 50  0001 C CNN
+F 3 "" H 3650 3450 50  0001 C CNN
+	1    3650 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60273486
+P 3650 3150
+AR Path="/5F9D8962/60273486" Ref="#PWR?"  Part="1" 
+AR Path="/5FA19082/60273486" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3650 3000 50  0001 C CNN
+F 1 "+3V3" H 3665 3323 50  0000 C CNN
+F 2 "" H 3650 3150 50  0001 C CNN
+F 3 "" H 3650 3150 50  0001 C CNN
+	1    3650 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3400 4350 3150
+Wire Wire Line
+	4350 3150 3650 3150
+Connection ~ 3650 3150
+Wire Wire Line
+	4550 3350 4550 3400
+$Comp
+L Device:R R?
+U 1 1 6027B0A4
+P 7200 3600
+F 0 "R?" V 6993 3600 50  0000 C CNN
+F 1 "1k" V 7084 3600 50  0000 C CNN
+F 2 "" V 7130 3600 50  0001 C CNN
+F 3 "~" H 7200 3600 50  0001 C CNN
+	1    7200 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 3750 7200 3800
+$Comp
+L Transistor_FET:BUK7M9R9-60EX Q2
+U 1 1 5F9F5A73
+P 7200 3100
+AR Path="/5F9D8962/5F9F5A73" Ref="Q2"  Part="1" 
+AR Path="/5FA19082/5F9F5A73" Ref="Q1"  Part="1" 
+F 0 "Q2" H 7404 3146 50  0000 L CNN
+F 1 "BUK7M9R9-60EX" H 7404 3055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:LFPAK33" H 7400 3025 50  0001 L CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BUK7M9R9-60E.pdf" V 7200 3100 50  0001 L CNN
+	1    7200 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4550 3350 7900 3350
+Wire Wire Line
+	7200 3450 7200 3300
+Wire Wire Line
+	7900 3000 7400 3000
+Wire Wire Line
+	3750 4000 3600 4000
+Text HLabel 3600 4000 0    50   Input ~ 0
+I2C_ADDR
+Wire Wire Line
+	8150 3050 8150 3000
+Wire Wire Line
+	8150 3000 7900 3000
+Connection ~ 7900 3000
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6028D2E5
+P 4650 3300
+F 0 "TP?" H 4708 3418 50  0000 L CNN
+F 1 "TestPoint" H 4708 3327 50  0000 L CNN
+F 2 "" H 4850 3300 50  0001 C CNN
+F 3 "~" H 4850 3300 50  0001 C CNN
+	1    4650 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3300 4650 3400
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6028E0EE
+P 3100 4150
+F 0 "TP?" H 3100 4475 50  0000 C CNN
+F 1 "TestPoint" H 3100 4384 50  0000 C CNN
+F 2 "" H 3300 4150 50  0001 C CNN
+F 3 "~" H 3300 4150 50  0001 C CNN
+	1    3100 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 4150 3100 4200
+Wire Wire Line
+	3100 4200 3750 4200
+$Comp
+L Jumper:Jumper_2_Bridged JP?
+U 1 1 6028F5B3
+P 7200 5000
+F 0 "JP?" H 7200 5195 50  0000 C CNN
+F 1 "Jumper_2_Bridged" H 7200 5104 50  0000 C CNN
+F 2 "" H 7200 5000 50  0001 C CNN
+F 3 "~" H 7200 5000 50  0001 C CNN
+	1    7200 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_2_Bridged JP?
+U 1 1 602903C9
+P 7200 5100
+F 0 "JP?" H 7200 5203 50  0000 C CNN
+F 1 "Jumper_2_Bridged" H 7200 5294 50  0000 C CNN
+F 2 "" H 7200 5100 50  0001 C CNN
+F 3 "~" H 7200 5100 50  0001 C CNN
+	1    7200 5100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7400 5000 7900 5000
+Wire Wire Line
+	7400 5100 7900 5100
+Wire Wire Line
+	7000 5000 3700 5000
+Wire Wire Line
+	3700 5000 3700 4300
+Wire Wire Line
+	3700 4300 3750 4300
+Wire Wire Line
+	3750 4400 3750 5100
+Wire Wire Line
+	3750 5100 7000 5100
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60293110
+P 7450 4050
+F 0 "TP?" H 7508 4168 50  0000 L CNN
+F 1 "TestPoint" H 7508 4077 50  0000 L CNN
+F 2 "" H 7650 4050 50  0001 C CNN
+F 3 "~" H 7650 4050 50  0001 C CNN
+	1    7450 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 602937A0
+P 7350 4050
+F 0 "TP?" H 7293 4168 50  0000 R CNN
+F 1 "TestPoint" H 7293 4077 50  0000 R CNN
+F 2 "" H 7550 4050 50  0001 C CNN
+F 3 "~" H 7550 4050 50  0001 C CNN
+	1    7350 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 4050 7350 4200
+Connection ~ 7350 4200
+Wire Wire Line
+	7350 4200 6550 4200
+Wire Wire Line
+	7450 4050 7450 4100
+Connection ~ 7450 4100
+Wire Wire Line
+	7450 4100 7000 4100
+$Comp
+L Connector:TestPoint TP?
+U 1 1 602959A5
+P 7900 2950
+F 0 "TP?" H 7958 3068 50  0000 L CNN
+F 1 "TestPoint" H 7958 2977 50  0000 L CNN
+F 2 "" H 8100 2950 50  0001 C CNN
+F 3 "~" H 8100 2950 50  0001 C CNN
+	1    7900 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60295C94
+P 5800 3750
+F 0 "TP?" H 5858 3868 50  0000 L CNN
+F 1 "TestPoint" H 5858 3777 50  0000 L CNN
+F 2 "" H 6000 3750 50  0001 C CNN
+F 3 "~" H 6000 3750 50  0001 C CNN
+	1    5800 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3000 7900 3350
+Connection ~ 7900 3350
+Wire Wire Line
+	7900 3350 7900 3900
+$Comp
+L Connector:TestPoint TP?
+U 1 1 602A1640
+P 5700 3750
+F 0 "TP?" H 5643 3868 50  0000 R CNN
+F 1 "TestPoint" H 5643 3777 50  0000 R CNN
+F 2 "" H 5900 3750 50  0001 C CNN
+F 3 "~" H 5900 3750 50  0001 C CNN
+	1    5700 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3800 5800 3800
+Wire Wire Line
+	5150 3900 5700 3900
+Wire Wire Line
+	5700 3900 5700 3750
+Wire Wire Line
+	5800 3750 5800 3800
+Connection ~ 5800 3800
+Wire Wire Line
+	5800 3800 7200 3800
+Wire Wire Line
+	7900 2950 7900 3000
+$EndSCHEMATC

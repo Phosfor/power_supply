@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name TPS55165)(type KiCad)(uri "${KIPRJMOD}/parts/IC_Texas Instruments_TPS55165QPWPRQ1/eec.pretty")(options "")(descr ""))
+  (lib (name STM32WB55RGV6)(type KiCad)(uri ${KIPRJMOD}/parts/IC_STMicroelectronics_STM32WB55RGV6/eec.pretty)(options "")(descr ""))
+)

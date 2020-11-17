@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name TPS55165)(type Legacy)(uri "${KIPRJMOD}/parts/IC_Texas Instruments_TPS55165QPWPRQ1/eec.lib")(options "")(descr ""))
+  (lib (name power_supply)(type Legacy)(uri ${KIPRJMOD}/power_supply.lib)(options "")(descr ""))
+  (lib (name STM32WB55RGV6)(type Legacy)(uri ${KIPRJMOD}/parts/IC_STMicroelectronics_STM32WB55RGV6/eec.lib)(options "")(descr ""))
+)

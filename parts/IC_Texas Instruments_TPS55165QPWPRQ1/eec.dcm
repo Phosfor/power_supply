@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TPS55165QPWPRQ1
+D TPS55165QPWPRQ1
+F http://www.ti.com/lit/ds/symlink/tps55165-q1.pdf
+$ENDCMP
+# end doc library

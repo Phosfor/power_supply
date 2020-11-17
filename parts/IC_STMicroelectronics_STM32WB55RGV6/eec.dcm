@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP STM32WB55RGV6
+D STM32WB55RGV6
+F https://www.st.com/resource/en/datasheet/stm32wb55rg.pdf
+$ENDCMP
+# end doc library

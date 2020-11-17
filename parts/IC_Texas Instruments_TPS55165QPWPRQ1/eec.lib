@@ -1,0 +1,71 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Texas Instruments TPS55165QPWPRQ1
+#
+DEF TPS55165QPWPRQ1 U 0 40 Y Y 1 L N
+F0 "U" 0 200 50 H V L CNN 
+F1 "TPS55165QPWPRQ1" 0 300 50 H V L CNN 
+F2 "Texas_Instruments-PWP0020AA-0-0-*" 0 400 50 H I L CNN 
+F3 "http://www.ti.com/lit/ds/symlink/tps55165-q1.pdf" 0 500 50 H I L CNN 
+F4 "+125°C" 0 600 50 H I L CNN "ambient temperature range high"
+F5 "-40°C" 0 700 50 H I L CNN "ambient temperature range low"
+F6 "Yes" 0 800 50 H I L CNN "automotive"
+F7 "Grade 1" 0 900 50 H I L CNN "automotive grade"
+F8 "IC" 0 1000 50 H I L CNN "category"
+F9 "Integrated Circuits (ICs)" 0 1100 50 H I L CNN "device class L1"
+F10 "Power Management ICs" 0 1200 50 H I L CNN "device class L2"
+F11 "Voltage Regulators - Switching" 0 1300 50 H I L CNN "device class L3"
+F12 "IC REG BCK BST 5V/12V 20HTSSOP" 0 1400 50 H I L CNN "digikey description"
+F13 "296-50107-1-ND" 0 1500 50 H I L CNN "digikey part number"
+F14 "http://www.ti.com/lit/ds/symlink/bq24001.pdf" 0 1600 50 H I L CNN "footprint url"
+F15 "1.2mm" 0 1700 50 H I L CNN "height"
+F16 "SOP65P640X120-20" 0 1800 50 H I L CNN "ipc land pattern name"
+F17 "Yes" 0 1900 50 H I L CNN "lead free"
+F18 "2026c11a53cb19f5" 0 2000 50 H I L CNN "library id"
+F19 "Texas Instruments" 0 2100 50 H I L CNN "manufacturer"
+F20 "99%" 0 2200 50 H I L CNN "max duty cycle"
+F21 "+150°C" 0 2300 50 H I L CNN "max junction temp"
+F22 "36V" 0 2400 50 H I L CNN "max supply voltage"
+F23 "2V" 0 2500 50 H I L CNN "min supply voltage"
+F24 "2V to 36V, 1A output, 2MHz, synchronous step-up and step-down converter, AEC-Q100 qualified 20-HTSSOP -40 to 125" 0 2600 50 H I L CNN "mouser description"
+F25 "595-TPS55165QPWPRQ1" 0 2700 50 H I L CNN "mouser part number"
+F26 "15uA" 0 2800 50 H I L CNN "nominal supply current"
+F27 "1" 0 2900 50 H I L CNN "number of outputs"
+F28 "1A" 0 3000 50 H I L CNN "output current"
+F29 "Fixed" 0 3100 50 H I L CNN "output type"
+F30 "5/12V" 0 3200 50 H I L CNN "output voltage"
+F31 "HTSSOP 20" 0 3300 50 H I L CNN "package"
+F32 "Yes" 0 3400 50 H I L CNN "rohs"
+F33 "0.05mm" 0 3500 50 H I L CNN "standoff height"
+F34 "1800-2400kHz" 0 3600 50 H I L CNN "switching frequency"
+F35 "Buck-Boost" 0 3700 50 H I L CNN "switching topology"
+F36 "+125°C" 0 3800 50 H I L CNN "temperature range high"
+F37 "-40°C" 0 3900 50 H I L CNN "temperature range low"
+DRAW
+X VINL 5 100 0 100 R 40 40 1 1 W 
+X VINP 4 100 -100 100 R 40 40 1 1 W 
+X BST1 3 100 -800 100 R 40 40 1 1 I 
+X BST2 19 100 -900 100 R 40 40 1 1 I 
+X IGN 6 100 -400 100 R 40 40 1 1 I 
+X IGN_PWRL 8 100 -500 100 R 40 40 1 1 I 
+X PG 15 1900 -600 100 L 40 40 1 1 C 
+X PG_DLY 10 1900 -700 100 L 40 40 1 1 I 
+X VREG 12 1900 0 100 L 40 40 1 1 O 
+X VREG_Q 11 1900 -100 100 L 40 40 1 1 O 
+X VOUT 17 1900 -300 100 L 40 40 1 1 O 
+X VOUT_SENSE 16 1900 -400 100 L 40 40 1 1 I 
+X L1 2 100 -1200 100 R 40 40 1 1 I 
+X L2 20 100 -1300 100 R 40 40 1 1 I 
+X PS 7 100 -1600 100 R 40 40 1 1 I 
+X SS_EN 9 1900 -900 100 L 40 40 1 1 I 
+X Thermal_Pad 21 1900 -1300 100 L 40 40 1 1 W 
+X VOS_FB 14 1900 -1100 100 L 40 40 1 1 I 
+X GND 13 1900 -1400 100 L 40 40 1 1 W 
+X GND 18 1900 -1500 100 L 40 40 1 1 W 
+X PGND 1 1900 -1600 100 L 40 40 1 1 W 
+S 200 100 1800 -1700 1 1 0 f
+ENDDRAW
+ENDDEF
+#
+# End Library
